@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-ljag
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/rsoaresd_org/spi-demos-vnbo-tenant/dotnet-component/devfile-sample-dotnet60-basic-ljag@sha256:83c9e7dbc1511f5f1c6d6e52db6e9e24ecaaced67137ba5c4be587e1064631fc
+        name: main
+        resources: {}
+status: {}
